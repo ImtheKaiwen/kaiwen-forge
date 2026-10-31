@@ -4,7 +4,7 @@
 > **Hedef konum:** `kaiwen-ai/kaiwen-forge/docs/EVALUATION.md`  
 > **Durum:** Tasarım / uygulama şartnamesi; Forge Evaluation Engine henüz uygulanmış değildir.  
 > **Sahip:** Kaiwen Forge; modele özgü metrik hesabı ve adapter sınırları için Kaiwen Speech ile sözleşmeli.  
-> **Temel referanslar:** [Forge README](../README.md), [Training Pipeline](TRAINING_PIPELINE.md), [Experiments](EXPERIMENTS.md), [Speech Performance](../../kaiwen-speech/docs/PERFORMANCE.md), [Speech Codec](../../kaiwen-speech/docs/CODEC.md), [Speech Model](../../kaiwen-speech/docs/SPEECH_MODEL.md), [Integration](../../docs/INTEGRATION.md), [Engineering Standards](../../docs/ENGINEERING_STANDARDS.md).
+> **Temel referanslar:** [Forge README](../README.md), [Training Pipeline](TRAINING_PIPELINE.md), [Experiments](EXPERIMENTS.md), [Speech Performance](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md), [Speech Codec](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/CODEC.md), [Speech Model](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/SPEECH_MODEL.md), [Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md), [Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md).
 
 ---
 
@@ -669,7 +669,7 @@ Aynı model konfigürasyonunun farklı seed'lerle eğitimi ayrı run'lardır. Te
 
 ## 17. Performance evaluation ve ölçüm sınırları
 
-Bu bölüm [Speech Performance](../../kaiwen-speech/docs/PERFORMANCE.md) sözlüğünü tekrar tanımlamaz; Forge aynı sürümlü metrik tanımlarını tüketir. Runtime benchmark ve Live E2E arasındaki ölçüm farkı korunur.
+Bu bölüm [Speech Performance](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md) sözlüğünü tekrar tanımlamaz; Forge aynı sürümlü metrik tanımlarını tüketir. Runtime benchmark ve Live E2E arasındaki ölçüm farkı korunur.
 
 ### 17.1 Başlangıç koşulları
 
@@ -1250,10 +1250,10 @@ Bir LLM'nin konuşma değerlendirme rubriği açıklaması, otomatik ön eleme v
 | [Experiments](EXPERIMENTS.md) | Deney tasarımı, metric registry, comparison, istatistiksel protokol |
 | **Bu belge** | Evaluation engine, evaluator API, test setleri, kalite ölçümü ve kanıt üretimi |
 | [Model Registry](MODEL_REGISTRY.md) | Doğrulanmış artifact'ın yaşam döngüsü ve release gate — henüz yazılacak |
-| [Speech Model](../../kaiwen-speech/docs/SPEECH_MODEL.md) | Token modelinin gerçek algoritmaları |
-| [Speech Codec](../../kaiwen-speech/docs/CODEC.md) | Codec, RVQ, ses eğitim ve doğruluk sözleşmesi |
-| [Speech Performance](../../kaiwen-speech/docs/PERFORMANCE.md) | TTFA, RTF, VRAM ve benchmark ölçüm semantiği |
-| [Integration](../../docs/INTEGRATION.md) | Corpus/Forge/Speech/Live/Agent sınırları |
-| [Engineering Standards](../../docs/ENGINEERING_STANDARDS.md) | Test, kalite, güvenlik ve CI/CD ortak standardı |
+| [Speech Model](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/SPEECH_MODEL.md) | Token modelinin gerçek algoritmaları |
+| [Speech Codec](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/CODEC.md) | Codec, RVQ, ses eğitim ve doğruluk sözleşmesi |
+| [Speech Performance](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md) | TTFA, RTF, VRAM ve benchmark ölçüm semantiği |
+| [Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md) | Corpus/Forge/Speech/Live/Agent sınırları |
+| [Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) | Test, kalite, güvenlik ve CI/CD ortak standardı |
 
 **Belge kapanış ilkesi:** Kaiwen Forge yalnızca puan üreten bir araç değildir. Hangi puanın neyi ölçtüğünü, neyi ölçmediğini, hangi veriyle üretildiğini, neden karşılaştırılabilir olduğunu ve hangi koşullarda güvenilemeyeceğini açıklayan **kanıta dayalı araştırma altyapısı** olmalıdır. Başarı, modelin iyi görünmesinden değil; iyi, kötü ve belirsiz sonuçların aynı dürüstlükle ölçülüp saklanmasından doğar.

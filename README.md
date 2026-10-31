@@ -1124,12 +1124,12 @@ Aşağıdaki bağlantılar önerilen **yerel `kaiwen-ai/` workspace yapısında*
 
 | Belge | Rol |
 |---|---|
-| [`../README.md`](../README.md) | Altı repo için genel başlangıç. |
-| [`../AGENTS.md`](../AGENTS.md) | Workspace Codex çalışma kuralları. |
-| [`../docs/OVERVIEW.md`](../docs/OVERVIEW.md) | Ekosistem vizyonu ve sahiplik sınırları. |
-| [`../docs/INTEGRATION.md`](../docs/INTEGRATION.md) | Corpus/Forge/Speech/Live sözleşme yönleri. |
-| [`../docs/ENGINEERING_STANDARDS.md`](../docs/ENGINEERING_STANDARDS.md) | Ortak kalite ve güvenlik standartları. |
-| [`../docs/ROADMAP.md`](../docs/ROADMAP.md) | Altı repoda kilometre taşları. |
+| [`../README.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/README.md) | Altı repo için genel başlangıç. |
+| [`../AGENTS.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/AGENTS.md) | Workspace Codex çalışma kuralları. |
+| [`../docs/OVERVIEW.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/OVERVIEW.md) | Ekosistem vizyonu ve sahiplik sınırları. |
+| [`../docs/INTEGRATION.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md) | Corpus/Forge/Speech/Live sözleşme yönleri. |
+| [`../docs/ENGINEERING_STANDARDS.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) | Ortak kalite ve güvenlik standartları. |
+| [`../docs/ROADMAP.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md) | Altı repoda kilometre taşları. |
 
 ### 24.2 Forge teknik belge serisi — **henüz hazırlanacak**
 
@@ -1147,12 +1147,12 @@ Bu tablo **Forge'un mevcut dosya listesi değildir**. Belgeler üretildikçe lin
 
 Kaiwen Speech ayrıntıları için ilgili repodaki şu dokümanlar rehberdir:
 
-- [`../kaiwen-speech/docs/VISION.md`](../kaiwen-speech/docs/VISION.md): araştırma hedefleri ve Türkçe speech-native yaklaşım.
-- [`../kaiwen-speech/docs/ARCHITECTURE.md`](../kaiwen-speech/docs/ARCHITECTURE.md): model/codec sınırları.
-- [`../kaiwen-speech/docs/CODEC.md`](../kaiwen-speech/docs/CODEC.md): özgün causal codec ve RVQ.
-- [`../kaiwen-speech/docs/SPEECH_MODEL.md`](../kaiwen-speech/docs/SPEECH_MODEL.md): Transformer, loss ve diyalog.
-- [`../kaiwen-speech/docs/API.md`](../kaiwen-speech/docs/API.md): SDK ve inference sözleşmeleri.
-- [`../kaiwen-speech/docs/PERFORMANCE.md`](../kaiwen-speech/docs/PERFORMANCE.md): VRAM ve gerçek zamanlı performans testleri.
+- [`../kaiwen-speech/docs/VISION.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/VISION.md): araştırma hedefleri ve Türkçe speech-native yaklaşım.
+- [`../kaiwen-speech/docs/ARCHITECTURE.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/ARCHITECTURE.md): model/codec sınırları.
+- [`../kaiwen-speech/docs/CODEC.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/CODEC.md): özgün causal codec ve RVQ.
+- [`../kaiwen-speech/docs/SPEECH_MODEL.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/SPEECH_MODEL.md): Transformer, loss ve diyalog.
+- [`../kaiwen-speech/docs/API.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/API.md): SDK ve inference sözleşmeleri.
+- [`../kaiwen-speech/docs/PERFORMANCE.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md): VRAM ve gerçek zamanlı performans testleri.
 
 Bu Speech belgeleri önceki adımlarda hazırlanan **yerel taslaklardır**; GitHub'daki repo üzerinde bütün değişikliklerin uygulanmış olduğu anlamına gelmez.
 

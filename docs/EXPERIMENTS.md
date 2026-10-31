@@ -29,9 +29,9 @@ Bu ayrım korunmadığında bir ekip aynı `loss` eğrisini farklı koşullarda 
 
 ### 1.2 Kapsam dışı
 
-- Neural codec katmanları, RVQ ve ses kayıpları: [Speech Codec](../../kaiwen-speech/docs/CODEC.md).
-- Transformer mimarisi, attention, loss hesabı: [Speech Model](../../kaiwen-speech/docs/SPEECH_MODEL.md).
-- Benchmark motorunun modele özgü uygulaması ve ölçüm yöntemleri: [Speech Performance](../../kaiwen-speech/docs/PERFORMANCE.md).
+- Neural codec katmanları, RVQ ve ses kayıpları: [Speech Codec](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/CODEC.md).
+- Transformer mimarisi, attention, loss hesabı: [Speech Model](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/SPEECH_MODEL.md).
+- Benchmark motorunun modele özgü uygulaması ve ölçüm yöntemleri: [Speech Performance](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md).
 - Dataset toplama, diarization, etiketleme: Kaiwen Corpus.
 - Bir checkpoint'in dağıtılabilir sürüm olarak onaylanması: gelecekteki `MODEL_REGISTRY.md`.
 - Çalışan bir web panel, uzaktan dağıtık çalışma sistemi veya MLflow sunucusu zorunluluğu.
@@ -73,7 +73,7 @@ Corpus                               Speech
 
 Forge, Corpus'un lisans kararını veya segment düzeltmelerini kendi başına üretmez. Corpus manifestini hash ve immutable kimlikle tüketir. Forge, Speech'in çıktısını doğrular ama `torch.nn.Module` mimarisini yeniden yazmaz. Speech'in ürettiği checkpoint'in iç formatına keyfi alan ekleyerek geriye dönük uyumluluğu bozmaz. Live'a “en iyi model” diye doğrulanmamış bir checkpoint göndermek Forge'un işi değildir; registry onay kapısından geçilmelidir.
 
-[Workspace Overview](../../docs/OVERVIEW.md), [Integration](../../docs/INTEGRATION.md), [Engineering Standards](../../docs/ENGINEERING_STANDARDS.md), [Roadmap](../../docs/ROADMAP.md), [Forge README](../README.md) ve [Forge AGENTS](../AGENTS.md) üst düzey kararları tanımlar. Bu belge yalnızca **deney ve araştırma kayıtlarının semantiği** konusunda ayrıntılı otoritedir.
+[Workspace Overview](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/OVERVIEW.md), [Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md), [Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md), [Roadmap](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md), [Forge README](../README.md) ve [Forge AGENTS](../AGENTS.md) üst düzey kararları tanımlar. Bu belge yalnızca **deney ve araştırma kayıtlarının semantiği** konusunda ayrıntılı otoritedir.
 
 ## 3. Bilimsel araştırma felsefesi
 
@@ -1083,11 +1083,11 @@ Bu dosya yalnızca deney tasarımını, metriklerin anlamını ve araştırma ka
 - [Training Pipeline](TRAINING_PIPELINE.md): worker, scheduler, checkpoint, retry, Colab/Drive ve run durum makinesi.
 - **Planlanan `EVALUATION.md`:** evaluator suite uygulamaları, ölçekler, örnek seçme ve benchmark motorları. Bu belge henüz yazılmadığından aşağıda çalışan dosya bağlantısı verilmemiştir.
 - **Planlanan `MODEL_REGISTRY.md`:** candidate inceleme, onay, release ve rollback. Bu belge henüz yazılmadığından çalışan dosya bağlantısı verilmemiştir.
-- [Workspace Integration](../../docs/INTEGRATION.md): repo arası dataset ve artifact sözleşmeleri.
-- [Engineering Standards](../../docs/ENGINEERING_STANDARDS.md): ortak mühendislik kalite kapıları.
-- [Workspace Roadmap](../../docs/ROADMAP.md): kilometre taşları ve bağımlılıklar.
-- [Speech Model](../../kaiwen-speech/docs/SPEECH_MODEL.md): training label/loss ve model mimarisinin gerçek sahibi.
-- [Speech Codec](../../kaiwen-speech/docs/CODEC.md): bitrate, RVQ ve reconstruction araştırması.
-- [Speech Performance](../../kaiwen-speech/docs/PERFORMANCE.md): gerçek zamanlı performans metriklerinin teknik ölçümü.
+- [Workspace Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md): repo arası dataset ve artifact sözleşmeleri.
+- [Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md): ortak mühendislik kalite kapıları.
+- [Workspace Roadmap](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md): kilometre taşları ve bağımlılıklar.
+- [Speech Model](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/SPEECH_MODEL.md): training label/loss ve model mimarisinin gerçek sahibi.
+- [Speech Codec](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/CODEC.md): bitrate, RVQ ve reconstruction araştırması.
+- [Speech Performance](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md): gerçek zamanlı performans metriklerinin teknik ölçümü.
 
 **Son ilke:** Forge araştırma kararlarını süslemek için değil, sonuçları dürüst biçimde incelemek için vardır. İyi görünmeyen, anlamlı fark üretmeyen veya beklenenden kötü sonuçlanan deneyler de aynı ciddiyetle korunur. Model araştırmasında güvenilir bir “henüz bilmiyoruz” cevabı, kaynağı belirsiz bir “başardık” cümlesinden daha değerlidir.

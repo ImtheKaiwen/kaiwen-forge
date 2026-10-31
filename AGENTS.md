@@ -21,7 +21,7 @@ Bu belge bir kullanıcı kılavuzundan farklıdır. [`README.md`](README.md) pro
 Ajan şu bağlamı sırayla değerlendirir:
 
 1. Çalışma ortamının yüksek öncelikli kuralları ve kullanıcının **mevcut somut isteği**.
-2. Mevcutsa çalışma alanı kökündeki [`../AGENTS.md`](../AGENTS.md), ortak [`../docs/ENGINEERING_STANDARDS.md`](../docs/ENGINEERING_STANDARDS.md) ve [`../docs/INTEGRATION.md`](../docs/INTEGRATION.md).
+2. Mevcutsa çalışma alanı kökündeki [`../AGENTS.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/AGENTS.md), ortak [`../docs/ENGINEERING_STANDARDS.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) ve [`../docs/INTEGRATION.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md).
 3. Bu repository'deki **bu** `AGENTS.md`, [`README.md`](README.md), görevle ilgili teknik belge ve karar kayıtları.
 4. **Gerçek uygulama durumu için** mevcut dosyalar, Git diff/durum, `pyproject.toml`, lockfile, workflow'lar, testler ve bağımlı kütüphanelerin gerçek API'ları.
 5. İşin kapsamını aşan veya belgeler arasında çelişen bir durum varsa değişikliğe başlamadan önce farkı ve seçenekleri açıkla.
@@ -748,9 +748,9 @@ Modül bazlı commitler mantıklıdır, fakat gereksiz bölünmüş PR'larla ent
 - [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) — run store, metric, comparison; hazırlanacak.
 - [`docs/EVALUATION.md`](docs/EVALUATION.md) — suite, benchmark ve bilimsel doğrulama; hazırlanacak.
 - [`docs/MODEL_REGISTRY.md`](docs/MODEL_REGISTRY.md) — promotion, integrity ve release; hazırlanacak.
-- [`../docs/ENGINEERING_STANDARDS.md`](../docs/ENGINEERING_STANDARDS.md) — tüm repolara ait ortak standartlar.
-- [`../docs/INTEGRATION.md`](../docs/INTEGRATION.md) — sözleşmeler ve bağımlılık yönleri.
-- [`../docs/ROADMAP.md`](../docs/ROADMAP.md) — milestone ve diğer projelerle plan.
+- [`../docs/ENGINEERING_STANDARDS.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) — tüm repolara ait ortak standartlar.
+- [`../docs/INTEGRATION.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md) — sözleşmeler ve bağımlılık yönleri.
+- [`../docs/ROADMAP.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md) — milestone ve diğer projelerle plan.
 
 **Önemli bağlantı uyarısı:** `../docs/*` bağlantıları **yalnızca** yerel `kaiwen-ai/` klasör düzeninde çözümlenir; Forge GitHub deposu tek başına açıldığında çalışmayabilir. Repo dokümantasyonu GitHub'da yayımlanmadan önce bu bağlantılar **mutlak doküman URL'lerine, referanslara veya kopyalamayan yönlendirme sayfalarına** dönüştürülmelidir. Henüz hazırlanacak dört Forge belgesinin bağlantıları da ilk etapta hedef bağlantıdır; oluşturulana kadar CI broken-link uyarı verebilir.
 

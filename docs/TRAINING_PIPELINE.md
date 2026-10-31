@@ -8,7 +8,7 @@
 
 ## 1. Belgenin amacı ve normatif dil
 
-Bu belge Kaiwen Forge'un **bir training run'ının kontrol düzlemi** olarak ne yapacağını açıklar. Modelin nöral katmanlarını, loss hesaplamasını, optimizer algoritmasını veya codec eğitimini yeniden tasarlamaz. Bu işler [Kaiwen Speech](../../kaiwen-speech/README.md) uygulamasına aittir. Forge'un görevi; bir eğitim işinin girdilerini doğru tanımlamak, başlamadan doğrulamak, uygun çalıştırıcıya iletmek, çalışmasını gözlemek, kayıtları ve artifact'leri doğrulamak, başarısızlıkları dürüstçe bildirmek ve yeniden üretilebilirlik kanıtlarını korumaktır.
+Bu belge Kaiwen Forge'un **bir training run'ının kontrol düzlemi** olarak ne yapacağını açıklar. Modelin nöral katmanlarını, loss hesaplamasını, optimizer algoritmasını veya codec eğitimini yeniden tasarlamaz. Bu işler [Kaiwen Speech](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/README.md) uygulamasına aittir. Forge'un görevi; bir eğitim işinin girdilerini doğru tanımlamak, başlamadan doğrulamak, uygun çalıştırıcıya iletmek, çalışmasını gözlemek, kayıtları ve artifact'leri doğrulamak, başarısızlıkları dürüstçe bildirmek ve yeniden üretilebilirlik kanıtlarını korumaktır.
 
 Bu dokümanda kullanılan etiketler:
 
@@ -18,7 +18,7 @@ Bu dokümanda kullanılan etiketler:
 - **DENEYSEL:** Karşılaştırmalı ölçüm yapılmadan varsayılan kabul edilmeyecek özellik.
 - **ZORUNLU:** İlgili özellik hayata geçirildiğinde kabul testi olmadan tamamlandı sayılamaz.
 
-Daha yüksek seviyedeki kararların kaynağı [Workspace Overview](../../docs/OVERVIEW.md), [Integration](../../docs/INTEGRATION.md), [Engineering Standards](../../docs/ENGINEERING_STANDARDS.md), [Roadmap](../../docs/ROADMAP.md), [Forge README](../README.md) ve [Forge AGENTS](../AGENTS.md) belgeleridir. Bu dosya yalnızca *training pipeline* konusunun ayrıntılarını sahiplenir; experiment analizleri, değerlendirme bilimsel protokolü ve registry promotion ayrı belgelerde ayrıntılandırılacaktır.
+Daha yüksek seviyedeki kararların kaynağı [Workspace Overview](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/OVERVIEW.md), [Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md), [Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md), [Roadmap](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md), [Forge README](../README.md) ve [Forge AGENTS](../AGENTS.md) belgeleridir. Bu dosya yalnızca *training pipeline* konusunun ayrıntılarını sahiplenir; experiment analizleri, değerlendirme bilimsel protokolü ve registry promotion ayrı belgelerde ayrıntılandırılacaktır.
 
 ## 2. Sorumluluk ve sahiplik matrisi
 
@@ -978,7 +978,7 @@ Forge'un CPU orkestrasyon maliyeti, Speech modelinin eğitim süresinden ayrı �
 Bir Codex görevi şu sıralamayı izlemelidir:
 
 1. `kaiwen-forge/README.md`, `kaiwen-forge/AGENTS.md` ve bu belgeyi oku.
-2. Workspace'teki [Engineering Standards](../../docs/ENGINEERING_STANDARDS.md) ile [Integration](../../docs/INTEGRATION.md) kurallarını kontrol et.
+2. Workspace'teki [Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) ile [Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md) kurallarını kontrol et.
 3. GitHub repo mevcut ağacını, değiştirilmiş dosyaları, gerçek Speech CLI argümanlarını, lock/config durumunu incele.
 4. Görevin F0–F9 hangi aşamasına ait olduğunu ve non-goal'lerini yaz.
 5. Yalnızca gerekli minimal modülleri ve contract fixture'larını oluştur.
@@ -1026,7 +1026,7 @@ Bu checklist **bugün tamamlanmış iş listesi değil**, kod geliştirmeye baş
 | UI dashboard gerekli mi? | CLI + okunabilir rapor | Operatörün somut zaman kaybı ölçülünce |
 | Tam bit-deterministic resume? | Mevcut sınır raporlanır | Speech state formatı ve loader iyileştirilince |
 
-Yeni bir teknoloji ortaya çıktığında «bilmiyorduk, bütün tasarımı değiştir» yaklaşımı yerine [Engineering Standards — Discovery Gate](../../docs/ENGINEERING_STANDARDS.md) kullanılır: problemi tanımla, mevcut çözümle karşılaştır, küçük proof-of-concept ile ölç, ancak sonra kabul et. Gereksiz planlama geliştirmenin önüne geçmemelidir.
+Yeni bir teknoloji ortaya çıktığında «bilmiyorduk, bütün tasarımı değiştir» yaklaşımı yerine [Engineering Standards — Discovery Gate](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) kullanılır: problemi tanımla, mevcut çözümle karşılaştır, küçük proof-of-concept ile ölç, ancak sonra kabul et. Gereksiz planlama geliştirmenin önüne geçmemelidir.
 
 ## 32. Kaynaklar, bağlantılar ve uyumluluk notu
 
@@ -1034,14 +1034,14 @@ Yeni bir teknoloji ortaya çıktığında «bilmiyorduk, bütün tasarımı değ
 
 - [Kaiwen Forge README](../README.md) — ürün sınırı ve hedef paket yapısı.
 - [Kaiwen Forge AGENTS](../AGENTS.md) — Codex çalışma protokolü.
-- [Workspace Overview](../../docs/OVERVIEW.md) — altı repo mimarisi.
-- [Workspace Integration](../../docs/INTEGRATION.md) — veri, codec, model ve Live entegrasyon sözleşmeleri.
-- [Workspace Engineering Standards](../../docs/ENGINEERING_STANDARDS.md) — mühendislik kalite kapıları.
-- [Workspace Roadmap](../../docs/ROADMAP.md) — F0–F9'un üst seviye iş programı.
-- [Kaiwen Speech Architecture](../../kaiwen-speech/docs/ARCHITECTURE.md) — codec/token/model sözleşmeleri.
-- [Kaiwen Speech Speech Model](../../kaiwen-speech/docs/SPEECH_MODEL.md) — loss, masking, inference ve model eğitimi.
-- [Kaiwen Speech API](../../kaiwen-speech/docs/API.md) — bugünkü API / hedef SDK ayrımı.
-- [Kaiwen Speech Performance](../../kaiwen-speech/docs/PERFORMANCE.md) — ölçümlerin koşulları.
+- [Workspace Overview](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/OVERVIEW.md) — altı repo mimarisi.
+- [Workspace Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md) — veri, codec, model ve Live entegrasyon sözleşmeleri.
+- [Workspace Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) — mühendislik kalite kapıları.
+- [Workspace Roadmap](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md) — F0–F9'un üst seviye iş programı.
+- [Kaiwen Speech Architecture](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/ARCHITECTURE.md) — codec/token/model sözleşmeleri.
+- [Kaiwen Speech Speech Model](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/SPEECH_MODEL.md) — loss, masking, inference ve model eğitimi.
+- [Kaiwen Speech API](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/API.md) — bugünkü API / hedef SDK ayrımı.
+- [Kaiwen Speech Performance](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md) — ölçümlerin koşulları.
 
 **Sonraki, henüz ayrıntılandırılmamış Forge belgeleri:** `docs/EXPERIMENTS.md`, `docs/EVALUATION.md`, `docs/MODEL_REGISTRY.md`. Bu belge onların yerini almaz. Her biri sonraki adımlarda birer dosya olarak oluşturulacaktır. Bu dosyanın varlığı kendi başına Forge kodunun hazır olduğu veya gerçek deneylerin çalıştığı anlamına gelmez.
 
