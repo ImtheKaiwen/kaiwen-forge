@@ -1081,8 +1081,8 @@ Bu dosya yalnızca deney tasarımını, metriklerin anlamını ve araştırma ka
 - [Forge README](../README.md): ürün kapsamı, mevcut durum ve önerilen modüller.
 - [Forge AGENTS](../AGENTS.md): Codex'in günlük çalışma ve onay kuralları.
 - [Training Pipeline](TRAINING_PIPELINE.md): worker, scheduler, checkpoint, retry, Colab/Drive ve run durum makinesi.
-- **Planlanan `EVALUATION.md`:** evaluator suite uygulamaları, ölçekler, örnek seçme ve benchmark motorları. Bu belge henüz yazılmadığından aşağıda çalışan dosya bağlantısı verilmemiştir.
-- **Planlanan `MODEL_REGISTRY.md`:** candidate inceleme, onay, release ve rollback. Bu belge henüz yazılmadığından çalışan dosya bağlantısı verilmemiştir.
+- [Evaluation](EVALUATION.md): mevcut tasarım belgesi; evaluator suite, ölçekler, örnek seçimi ve benchmark motorlarının uygulanması planlanmaktadır.
+- [Model Registry](MODEL_REGISTRY.md): mevcut tasarım belgesi; candidate inceleme, onay, release ve rollback uygulamaları planlanmaktadır.
 - [Workspace Integration](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md): repo arası dataset ve artifact sözleşmeleri.
 - [Engineering Standards](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md): ortak mühendislik kalite kapıları.
 - [Workspace Roadmap](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md): kilometre taşları ve bağımlılıklar.

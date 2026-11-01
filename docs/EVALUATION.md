@@ -1249,7 +1249,7 @@ Bir LLM'nin konuşma değerlendirme rubriği açıklaması, otomatik ön eleme v
 | [Training Pipeline](TRAINING_PIPELINE.md) | Eğitim işinin güvenli yürütülmesi |
 | [Experiments](EXPERIMENTS.md) | Deney tasarımı, metric registry, comparison, istatistiksel protokol |
 | **Bu belge** | Evaluation engine, evaluator API, test setleri, kalite ölçümü ve kanıt üretimi |
-| [Model Registry](MODEL_REGISTRY.md) | Doğrulanmış artifact'ın yaşam döngüsü ve release gate — henüz yazılacak |
+| [Model Registry](MODEL_REGISTRY.md) | Doğrulanmış artifact'ın yaşam döngüsü ve release gate için mevcut tasarım sözleşmesi; uygulama henüz planlanmaktadır |
 | [Speech Model](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/SPEECH_MODEL.md) | Token modelinin gerçek algoritmaları |
 | [Speech Codec](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/CODEC.md) | Codec, RVQ, ses eğitim ve doğruluk sözleşmesi |
 | [Speech Performance](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md) | TTFA, RTF, VRAM ve benchmark ölçüm semantiği |
