@@ -186,7 +186,7 @@ git clone https://github.com/ImtheKaiwen/kaiwen-forge.git
 cd kaiwen-forge
 ```
 
-**Bugün:** Forge reposu ilk README dışında Python paket altyapısı taşımıyor. Burada `uv sync`, `python -m kaiwen_forge` veya `forge run ...` çalıştırılabilir olarak sunulmuyor. Paket hazırlanıp testler eklendiğinde bu bölüm gerçek kurulum komutlarıyla güncellenecek.
+**Bugün:** Forge'un README, AGENTS ve teknik Markdown belgeleri mevcuttur; Python paketi, test edilmiş CLI ve model registry altyapısı henüz mevcut değildir. Burada `uv sync`, `python -m kaiwen_forge` veya `forge run ...` çalıştırılabilir olarak sunulmuyor. Paket hazırlanıp testler eklendiğinde bu bölüm gerçek kurulum komutlarıyla güncellenecek.
 
 ### 6.2 Mevcut Speech baseline'ını bağımsız çalıştırma
 
@@ -231,7 +231,7 @@ Komut isimleri, API yüzeyi ve argümanlar **ilk CLI ADR/contract testleriyle ke
 
 ## 7. Önerilen V1 Python paket mimarisi
 
-> **HEDEF KLASÖR YAPISI.** Bunların hiçbiri mevcut GitHub reposunda henüz yoktur.
+> **HEDEF KLASÖR YAPISI.** Ağaçta gösterilen README, AGENTS ve teknik Markdown belgeleri mevcut olabilir; Python paketi, CLI, workflow, recipes ve registry gibi uygulama parçaları hâlâ hedef yapıdır.
 
 ```text
 kaiwen-forge/
@@ -549,7 +549,7 @@ Train/validation/test ayrımında dosya ismi değil, gerçek örnekler arasında
 
 ### 11.5 Corpus sözleşmesinin otoritesi
 
-Entegrasyon genel ilkeleri `../docs/INTEGRATION.md`; gerçek export formatının nihai sahibi ise gelecekte yazılacak `kaiwen-corpus/docs/EXPORT_CONTRACT.md` olacak. Forge bu formatı **tüketen ve doğrulayan** taraftır. İki repo birbirinden bağımsız key isimleri icat ederse sözleşme testi başarısız olmalıdır.
+Entegrasyon genel ilkeleri `../docs/INTEGRATION.md`; gerçek export formatının dokümante edilmiş hedef sözleşmesinin sahibi ise PRIVATE Corpus reposunda yayımlanmış `kaiwen-corpus/docs/EXPORT_CONTRACT.md` belgesidir. Belgenin yayımlanmış olması export implementasyonunun tamamlandığı anlamına gelmez. Forge bu formatı **tüketen ve doğrulayan** taraftır. İki repo birbirinden bağımsız key isimleri icat ederse sözleşme testi başarısız olmalıdır.
 
 ---
 
@@ -1131,9 +1131,9 @@ Aşağıdaki bağlantılar önerilen **yerel `kaiwen-ai/` workspace yapısında*
 | [`../docs/ENGINEERING_STANDARDS.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) | Ortak kalite ve güvenlik standartları. |
 | [`../docs/ROADMAP.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md) | Altı repoda kilometre taşları. |
 
-### 24.2 Forge teknik belge serisi — **henüz hazırlanacak**
+### 24.2 Forge teknik belge serisi — **mevcut tasarım belgeleri; uygulamalar planlanan**
 
-| Planlanan dosya | Konusu |
+| Mevcut tasarım belgesi | Konusu |
 |---|---|
 | `AGENTS.md` | Forge'a özel Codex protokolü ve güven sınırları. |
 | `docs/TRAINING_PIPELINE.md` | Orchestrator, execution, resume, Colab ve checkpoint. |
@@ -1141,7 +1141,7 @@ Aşağıdaki bağlantılar önerilen **yerel `kaiwen-ai/` workspace yapısında*
 | `docs/EVALUATION.md` | Suite, benchmark, test ayrımı ve bilimsel kanıt. |
 | `docs/MODEL_REGISTRY.md` | Artifact, promotion, compatibility, release ve rollback. |
 
-Bu tablo **Forge'un mevcut dosya listesi değildir**. Belgeler üretildikçe link verilecek ve durum etiketleri güncellenecektir.
+Bu tablo Forge'un mevcut tasarım belgelerini listeler; bu belgelerde tanımlanan Python paketi, CLI, training orchestration, registry ve release uygulamaları hâlâ planlanmaktadır.
 
 ### 24.3 Model tarafı
 
@@ -1154,7 +1154,7 @@ Kaiwen Speech ayrıntıları için ilgili repodaki şu dokümanlar rehberdir:
 - [`../kaiwen-speech/docs/API.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/API.md): SDK ve inference sözleşmeleri.
 - [`../kaiwen-speech/docs/PERFORMANCE.md`](https://github.com/ImtheKaiwen/kaiwen-speech/blob/2dd8ae4ff4970fec13d761afbb5587b887957547/docs/PERFORMANCE.md): VRAM ve gerçek zamanlı performans testleri.
 
-Bu Speech belgeleri önceki adımlarda hazırlanan **yerel taslaklardır**; GitHub'daki repo üzerinde bütün değişikliklerin uygulanmış olduğu anlamına gelmez.
+Bu Speech belgeleri GitHub'da yayımlanmış tasarım/spesifikasyon belgeleridir; içerdikleri önerilen model, codec ve performans yeteneklerinin tamamının uygulanmış olduğu anlamına gelmez.
 
 ---
 
@@ -1218,7 +1218,7 @@ Bu maddelerin bir kısmı F0–F4 minimum kesitinden sonra tamamlanacak. Sağlan
 
 **İlk uygulama görevi:** `F0 — Repo foundation`. Yalnızca tek repo olan `kaiwen-forge` içinde minimal, çalıştırılabilir Python package + `uv` + kalite kontrolleri + basit CLI `doctor` komutunu kur. Sonra `F1 — Recipe validator`, `F2 — Run store` ile devam et. Doğrulanmış çalışma altyapısı oluşmadan kullanıcıyı yüzlerce servis ve soyut arayüzle meşgul etme.
 
-Bu README'nin sonraki belge halkası **`kaiwen-forge/AGENTS.md`** olacak: Forge'a özel Codex görev sınırları, güvenli process/dataset erişimi, test kanıtı ve mimari karar protokolleri burada daha kesin biçimde tanımlanacak.
+**`kaiwen-forge/AGENTS.md` mevcut Forge talimat belgesidir:** Forge'a özel Codex görev sınırları, güvenli process/dataset erişimi, test kanıtı ve mimari karar protokolleri burada daha kesin biçimde tanımlanır.
 
 ---
 
@@ -1228,7 +1228,7 @@ Bu README aşağıdaki var olan veya taslak kaynaklarla uyumlu yazılmıştır:
 
 1. GitHub'da 30 Ekim 2026 tarihli gerçek `ImtheKaiwen/kaiwen-forge` repo durumu (tek README).
 2. GitHub'daki `ImtheKaiwen/kaiwen-speech` Python kaynak kodu ve mevcut eğitim CLI'ları.
-3. Yerel `kaiwen-ai/docs/OVERVIEW.md`, `INTEGRATION.md`, `ENGINEERING_STANDARDS.md`, `ROADMAP.md` taslakları.
-4. Yerel Kaiwen Speech dokümantasyon serisi ve güncel 2 GB VRAM / Türkçe speech-native araştırma kararı.
+3. PRIVATE GitHub `kaiwen-ai` meta reposunda yayımlanmış `OVERVIEW.md`, `INTEGRATION.md`, `ENGINEERING_STANDARDS.md`, `ROADMAP.md` belgeleri; yetkili GitHub erişimi gerekir.
+4. GitHub'da yayımlanmış Kaiwen Speech tasarım/spesifikasyon belgeleri ve güncel 2 GB VRAM / Türkçe speech-native araştırma kararı; belgelerin yayımlanması önerilen yeteneklerin uygulandığını göstermez.
 
 **Önemli:** Bir dosya, komut veya API gerçekten implemente edildiğinde bu README'nin `planlanan` etiketleri güncellenir. Kodla çelişen bir belge teknik gerçekliğin yerine geçmez; çatışma belgelenir, testle doğrulanır ve kontrollü migration uygulanır.

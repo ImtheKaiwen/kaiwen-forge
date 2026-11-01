@@ -744,15 +744,15 @@ Modül bazlı commitler mantıklıdır, fakat gereksiz bölünmüş PR'larla ent
 
 - [`README.md`](README.md) — proje giriş kılavuzu ve mevcut/hedef durum.
 - `AGENTS.md` — bu geliştirme ajanı operasyon sözleşmesi.
-- [`docs/TRAINING_PIPELINE.md`](docs/TRAINING_PIPELINE.md) — worker, scheduling, resume, Colab/Drive; hazırlanacak.
-- [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) — run store, metric, comparison; hazırlanacak.
-- [`docs/EVALUATION.md`](docs/EVALUATION.md) — suite, benchmark ve bilimsel doğrulama; hazırlanacak.
-- [`docs/MODEL_REGISTRY.md`](docs/MODEL_REGISTRY.md) — promotion, integrity ve release; hazırlanacak.
+- [`docs/TRAINING_PIPELINE.md`](docs/TRAINING_PIPELINE.md) — worker, scheduling, resume, Colab/Drive; mevcut tasarım belgesi, uygulama henüz planlanan.
+- [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) — run store, metric, comparison; mevcut tasarım belgesi, uygulama henüz planlanan.
+- [`docs/EVALUATION.md`](docs/EVALUATION.md) — suite, benchmark ve bilimsel doğrulama; mevcut tasarım belgesi, uygulama henüz planlanan.
+- [`docs/MODEL_REGISTRY.md`](docs/MODEL_REGISTRY.md) — promotion, integrity ve release; mevcut tasarım belgesi, uygulama henüz planlanan.
 - [`../docs/ENGINEERING_STANDARDS.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ENGINEERING_STANDARDS.md) — tüm repolara ait ortak standartlar.
 - [`../docs/INTEGRATION.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/INTEGRATION.md) — sözleşmeler ve bağımlılık yönleri.
 - [`../docs/ROADMAP.md`](https://github.com/ImtheKaiwen/kaiwen-ai/blob/a2476114c4da048090aeb23a2b03a2ec930b113a/docs/ROADMAP.md) — milestone ve diğer projelerle plan.
 
-**Önemli bağlantı uyarısı:** `../docs/*` bağlantıları **yalnızca** yerel `kaiwen-ai/` klasör düzeninde çözümlenir; Forge GitHub deposu tek başına açıldığında çalışmayabilir. Repo dokümantasyonu GitHub'da yayımlanmadan önce bu bağlantılar **mutlak doküman URL'lerine, referanslara veya kopyalamayan yönlendirme sayfalarına** dönüştürülmelidir. Henüz hazırlanacak dört Forge belgesinin bağlantıları da ilk etapta hedef bağlantıdır; oluşturulana kadar CI broken-link uyarı verebilir.
+**Önemli bağlantı uyarısı:** Cross-repo dokümantasyon bağlantıları D8'de commit-sabitli GitHub URL'lerine dönüştürülmüştür. PRIVATE meta ve Speech hedefleri yetkili GitHub erişimi gerektirir; URL metinlerinin görünür olması hedef belge içeriğini anonim kullanıcılara açmaz. Dört Forge teknik Markdown belgesi mevcuttur; Forge CLI, training orchestration ve model registry/release kodu hâlâ planlanmaktadır.
 
 ### 18.1 ADR gerektiren kararlar
 
